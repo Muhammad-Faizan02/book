@@ -6,12 +6,14 @@
   outline: none;
   border: none;
   text-transform: capitalize;
+  text-decoration: none;
   transition: all 0.2s linear;
+  transition:width none;
 }
 
 html {
   overflow-x: hidden;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 5rem;
   -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
@@ -35,11 +37,11 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding: 1rem 9%;
+  padding: 1.5rem 9%;
 }
 
 .header .header-1 .logo {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: bolder;
   color: #444;
 }
@@ -49,7 +51,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .header-1 .search-form {
-  width: 31.25rem; 
+  width: 50rem; 
   height: 3.125rem;
   border: 0.125rem solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -98,7 +100,7 @@ html::-webkit-scrollbar-thumb {
 
 .header .header-2 {
   background: #27ae60;
-  padding: 0.9375rem 0;
+  padding: 2px 0;
 }
 
 .header .header-2 .navbar {
@@ -109,7 +111,8 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  padding: 0.75rem;
+  display: inline-block;
+  padding: 15px;
   font-size: 1rem;
 }
 
@@ -130,27 +133,6 @@ text-decoration: none;
 color: #fff;
 }
 
-/* bottom navar */
-.bottom-navbar {
-text-align: center;
-background: #27ae60;
-position: fixed;
-bottom: 0;
-left: 0;
-right: 0;
-z-index: 1000;
-display: none;
-}
-
-.bottom-navbar a {
-font-size: 2.5rem;
-padding: 2rem;
-color: #fff;
-}
-
-.bottom-navbar a:hover {
-background-color: #219150;
-}
 
 /* Login Form Css */
 .login-form-container {
@@ -443,7 +425,7 @@ p {
 }
 .col-2 img {
   max-width: 100%;
-  padding: 10px 50px;
+  padding: 50px 50px;
 }
 .btn,
 .sortbtn {
@@ -498,7 +480,7 @@ p {
   padding-bottom: .5rem;
 }
 .icons-container .icons p{
-  font-size: 18px;
+  font-size: 15px;
   color: #666;
 }
 /* Categories CSS */
@@ -752,4 +734,16 @@ ul {
 
 /* End Footer css*/
 
-
+@media (max-width:991px){
+  .modal {
+  position: fixed;
+  top: -80%;
+  transform: translate(-50%, -50%);
+  transition: top 0.3s ease-in-out;
+  left: 50%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  z-index: 2;
+  background-color: #fff;
+}
+}
