@@ -734,16 +734,3 @@ ul {
 
 /* End Footer css*/
 
-@media (max-width:991px){
-  .modal {
-  position: fixed;
-  top: -80%;
-  transform: translate(-50%, -50%);
-  transition: top 0.3s ease-in-out;
-  left: 50%;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  z-index: 2;
-  background-color: #fff;
-}
-}
