@@ -1,15 +1,17 @@
+
 let loginForm = document.querySelector('.login-form-container');
 
-document.querySelector('#login-btn').onclick =() =>{
+document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
 }
 
-document.querySelector('#close-login-btn').onclick =() =>{
+document.querySelector('#close-login-btn').onclick = () => {
     loginForm.classList.remove('active');
 }
 
-
 window.onscroll = () =>{
+
+    searchForm.classList.remove('act')
     if(window.scrollY > 80){
         document.querySelector('.header .header-2').classList.add('active');
     }else{
@@ -23,6 +25,22 @@ window.onload = () =>{
         document.querySelector('.header .header-2').classList.remove('active');
     }
     fadeout();
+}
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
