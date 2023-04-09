@@ -1,5 +1,5 @@
 
-let loginForm = document.querySelector('.login-form-container');
+let loginForm = document.querySelector('#login-form-container');
 
 document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
@@ -9,26 +9,7 @@ document.querySelector('#close-login-btn').onclick = () => {
     loginForm.classList.remove('active');
 }
 
-window.onscroll = () =>{
-
-    searchForm.classList.remove('act')
-    if(window.scrollY > 80){
-        document.querySelector('.header .header-2').classList.add('active');
-    }else{
-        document.querySelector('.header .header-2').classList.remove('active');
-    }
-}
-window.onload = () =>{
-    if(window.scrollY > 80){
-        document.querySelector('.header .header-2').classList.add('active');
-    }else{
-        document.querySelector('.header .header-2').classList.remove('active');
-    }
-    fadeout();
-}
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
@@ -37,12 +18,24 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
+function handleScroll() {
+    scrollFunction();
+
+    if (window.scrollY > 80) {
+        document.querySelector('.header .header-2').classList.add('active');
+    } else {
+        document.querySelector('.header .header-2').classList.remove('active');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
+fadeout();
 
 function loader(){
     document.querySelector('.loader-container').classList.add('active');
@@ -51,6 +44,8 @@ function loader(){
 function fadeout(){
     setTimeout(loader, 2000);
 }
+
+
 
 const btns = document.querySelectorAll("[data-target]");
 const close_modals = document.querySelectorAll(".close-modal");
@@ -100,13 +95,13 @@ function validate() {
         error_message.innerHTML = text;
         return false;
     }
-
+    
     if (isNaN(phone) || phone.length != 11) {
         text = "Please Enter Valid Phone Number (11-digit)";
         error_message.innerHTML = text;
         return false;
     }
-
+    
     if (message.length <= 140) {
         text = "Please enter more than 140 characters";
         error_message.innerHTML = text;
@@ -129,7 +124,7 @@ function filter() {
     filterValue = input.value.toUpperCase();
     ProductList = document.getElementById("product-list");
     ProductName = ProductList.getElementsByClassName("col-4");
-
+    
     for (i = 0; i < ProductName.length; i++) {
         h4 = ProductName[i].getElementsByTagName("h4")[0];
         if (h4.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
@@ -146,33 +141,33 @@ function sortList() {
     var ProductList, ProductName, i, switching, b, c, shouldSwitch;
     ProductList = document.getElementById("product-list"); 
     ProductName = ProductList.getElementsByClassName("col-4");
-
-switching=true; //boolean true
-
-
+    
+    switching=true; //boolean true
+    
+    
     while (switching) {
-
+        
         switching = false;
-
+        
         for (i=0; i < (ProductName.length - 1); i++) {
             shouldSwitch = false
             b = ProductName[i].getElementsByTagName("span")[0].innerHTML; 
             c = ProductName[i + 1].getElementsByTagName("span")[0].innerHTML;
-
+            
             if (Number(b) > Number(c)) { 
                 shouldSwitch= true;
                 break;
-
+                
             }
-
+            
         }
-
-
+        
+        
         if (shouldSwitch) {
-
+            
             ProductName[i].parentNode.insertBefore(ProductName[i + 1], ProductName[i]);
-
-switching=true;
+            
+            switching=true;
 
         }
 
