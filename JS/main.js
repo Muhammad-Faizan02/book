@@ -1,5 +1,4 @@
-
-let loginForm = document.querySelector('#login-form-container');
+let loginForm = document.querySelector('.login-form-container');
 
 document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
@@ -25,24 +24,24 @@ function topFunction() {
 
 function handleScroll() {
     scrollFunction();
-
+    
     if (window.scrollY > 80) {
         document.querySelector('.header .header-2').classList.add('active');
     } else {
         document.querySelector('.header .header-2').classList.remove('active');
     }
+    fadeout();
 }
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
-fadeout();
 
 function loader(){
     document.querySelector('.loader-container').classList.add('active');
 }
 
 function fadeout(){
-    setTimeout(loader, 2000);
+    setTimeout(loader, 4000);
 }
 
 
