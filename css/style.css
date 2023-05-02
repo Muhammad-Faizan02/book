@@ -30,6 +30,15 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #444;
 }
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(128, 126, 126);
+  text-decoration: none;
+}
 
 /* Header-1 CSS */
 
@@ -99,39 +108,38 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.header .header-2 {
+.navbar{
   background: #27ae60;
-  padding: 2px 0;
 }
+.navbar .navbar-nav .nav-link {
+color: rgb(255, 255, 255);
+font-size: 1.1em;
 
-.header .header-2 .navbar {
-  text-align: center;
 }
-
-.header .header-2 .navbar a {
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px;
-  font-size: 1rem;
-}
-
-.header .header-2 .navbar a:hover {
-  background: #219150
-}
-
-.header .header-2.active {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-z-index: 1000;
-}
-
-a {
-text-decoration: none;
+.navbar .navbar-nav .nav-link:hover {
+background: #219150;
 color: #fff;
+}
+.navbar .navbar-nav .nav-link {
+padding: 0.6em;
+}
+.navbar .navbar-brand {
+padding: 0 0.6em;
+}
+@media only screen and (min-width: 992px) {
+.navbar {
+padding: 0;
+}
+.navbar .navbar-nav .nav-link {
+padding: 1em 0.7em;
+}
+.navbar .navbar-brand {
+padding: 0 0.8em;
+}
+}
+.navbar .navbar-nav .nav-link {
+padding: 1em 0.7em;
+transition: all 0.5s;
 }
 
 
@@ -285,8 +293,7 @@ background-size: cover;
   height: auto;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
-
-.blog .blog_box .blog_card .blog_img {
+ .blog .blog_box .blog_card .blog_img {
   width: 23.75rem; /* 380px / 16px */
   height: 18.75rem; /* 300px / 16px */
   overflow: hidden;
@@ -373,8 +380,8 @@ form{
 }
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
+  width: 80rem;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -394,6 +401,9 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #219150;
+}
+.form-control{
+  width: 80rem;
 }
 
 
