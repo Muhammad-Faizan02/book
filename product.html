@@ -107,7 +107,7 @@
             </button>
         </div>
         <div class="row" id="product-list">
-            <div class="col-4" data-target="#modal1">
+            <div class="col-4" data-toggle="modal" data-target="#modal1">
                 <img src="./images/product-1.jpg">
                 <h4 class="product-name">HTML</h4>
                 <div class="rating">
@@ -119,7 +119,7 @@
                 </div>
                 $<span class="price">80</span>
             </div>
-            <div class="col-4" data-target="#modal2">
+            <div class="col-4" data-toggle="modal" data-target="#modal2">
                 <img src="./images/product-2.jpg">
                 <h4 class="product-name">CSS</h4>
                 <div class="rating">
@@ -131,7 +131,7 @@
                 </div>
                 $<span class="price">30</span>
             </div>
-            <div class="col-4" data-target="#modal3">
+            <div class="col-4" data-toggle="modal" data-target="#modal3">
                 <img src="./images/product-3.jpg">
                 <h4 class="product-name">JavaScript</h4>
                 <div class="rating">
@@ -143,7 +143,7 @@
                 </div>
                 $<span class="price">20</span>
             </div>
-            <div class="col-4" data-target="#modal4">
+            <div class="col-4" data-toggle="modal" data-target="#modal4">
                 <img src="./images/product-4.jpg">
                 <h4 class="product-name">Angular</h4>
                 <div class="rating">
@@ -155,7 +155,7 @@
                 </div>
                 $<span class="price">90</span>
             </div>
-            <div class="col-4" data-target="#modal5">
+            <div class="col-4" data-toggle="modal" data-target="#modal5">
                 <img src="./images/product-5.jpg">
                 <h4 class="product-name">Learning Techniques</h4>
                 <div class="rating">
@@ -167,7 +167,7 @@
                 </div>
                 $<span class="price">90</span>
             </div>
-            <div class="col-4" data-target="#modal6">
+            <div class="col-4" data-toggle="modal" data-target="#modal6">
                 <img src="./images/product-6.jpg">
                 <h4 class="product-name">Improving Productivity</h4>
                 <div class="rating">
@@ -179,7 +179,7 @@
                 </div>
                 $<span class="price">50</span>
             </div>
-            <div class="col-4" data-target="#modal7">
+            <div class="col-4" data-toggle="modal" data-target="#modal7">
                 <img src="./images/product-7.jpg">
                 <h4 class="product-name">Modern Learning</h4>
                 <div class="rating">
@@ -191,7 +191,7 @@
                 </div>
                 $<span class="price">30</span>
             </div>
-            <div class="col-4" data-target="#modal8">
+            <div class="col-4" data-toggle="modal" data-target="#modal8">
                 <img src="./images/product-8.jpg">
                 <h4 class="product-name">Mindful Learning</h4>
                 <div class="rating">
@@ -235,241 +235,227 @@
     <!-- End Footer -->
 
 
-    <!-- Start Modal -->
-    <div class="modal" id="modal1">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <!-- Start Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">HTML</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body text-center">
+                        <img src="./images/product-1.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">HTML</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal" id="modal2">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
-                    </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal3">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal2" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CSS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body text-center">
+                        <img src="./images/product-2.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">CSS</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal4">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">JavaScript</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body text-center">
+                        <img src="./images/product-3.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">JavaScript</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal5">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row row-2">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Angular</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body text-center">
+                        <img src="./images/product-4.jpg" alt="" class="img-thumbnail">
+                        <h4 class="product-name">Angular</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal6">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row row-2">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Learning Programming Techniques</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body">
+                        <img src="./images/product-5.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">Learning Programming Techniques</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal7">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row row-2">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Improving Productivity</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body">
+                        <img src="./images/product-6.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">Improving Productivity</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal8">
-        <div class="single-item">
-            <div class="small-container">
-                <div class="modal-header">
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="row row-2">
-                    <div class="col-2">
-                        <img src="./images/product-1.jpg" width="100%">
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modern Programming</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                        <p>Home / Books</p>
-                        <h1>HTML</h1>
-                        <h4>Price:$80</h4>
-                        <hr>Quantity:</hr>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <br>
-                        <a href="" class="btn">Add To Cart</a>
+                    <div class="modal-body">
+                        <img src="./images/product-7.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">Modern Programming</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="overlay"></div>
-    <!-- End Modal -->
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mindful Learning</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/product-8.jpg" alt="" class="img-fluid">
+                        <h4 class="product-name">Mindful Learning</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>$80.00</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="overlay"></div>
+        <!-- End Modal -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
