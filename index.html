@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css">
     <title>Book Paradise</title>
 </head>
@@ -33,16 +37,40 @@
             </div>
         </div>
 
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="product.html">Products</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="#blog">Blogs</a>
+        <div class="bg-success custom-nav">
+            <nav class="navbar navbar-expand-lg">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blogs</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
-        </div>
-        </div>
+          </div>
 
 
     </header>
@@ -70,81 +98,79 @@
     <!-- End Login -->
     <!-- Start Banner -->
 
-    <div class="row">
-        <div class="col-2">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
             <h1>Explore Book Paradise here</h1>
             <br>
-            <p>Book Paradise is a dream come true for technology enthusiasts and book lovers alike. This incredible
-                store boasts a vast and impressive collection of books, all dedicated to the ever-evolving world of
-                information technology. From programming languages to networking, cybersecurity, and artificial
-                intelligence, Book Paradise offers an unparalleled selection of titles to choose from. Whether you're an
-                experienced professional looking to expand your knowledge or a curious beginner eager to learn, this
-                store has something for everyone. With a team of knowledgeable staff on hand to assist with any queries
-                and recommendations, Book Paradise is the ultimate destination for any tech-savvy reader looking to
-                expand their horizons.</p>
-
-            <a href="product.html" class="btn">Explore Now &#10137;</a>
+            <p>Book Paradise is a dream come true for technology enthusiasts and book lovers alike. This incredible store boasts a vast and impressive collection of books, all dedicated to the ever-evolving world of information technology. From programming languages to networking, cybersecurity, and artificial intelligence, Book Paradise offers an unparalleled selection of titles to choose from. Whether you're an experienced professional looking to expand your knowledge or a curious beginner eager to learn, this store has something for everyone. With a team of knowledgeable staff on hand to assist with any queries and recommendations, Book Paradise is the ultimate destination for any tech-savvy reader looking to expand their horizons.</p>
+            <a href="product.html" class="btn btn-primary">Explore Now &#10137;</a>
+          </div>
+          <div class="col-md-6">
+            <img src="./images/image1.jpg" alt="img" class="img-fluid">
+          </div>
         </div>
-
-        <div class="col-2">
-            <img src="./images/image1.jpg" alt="img">
-        </div>
-    </div>
+      </div>
+      
     <!-- banner end -->
 
     <!-- icon container start -->
     <section class="icons-container">
-        
-        <div class="icons">
-            <i class="fas fa-plane"></i>
-            <div class="content">
-                <h3>free shippihg</h3>
-                <p>order over $100</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="icons">
+                <i class="fas fa-plane"></i>
+                <div class="content">
+                  <h3>Free Shipping</h3>
+                  <p>On orders over $100</p>
+                </div>
+              </div>
             </div>
-
-        </div>
-        <div class="icons">
-            <i class="fas fa-lock"></i>
-            <div class="content">
-                <h3>secure payment</h3>
-                <p>100% secure payment</p>
+            <div class="col-md-3">
+              <div class="icons">
+                <i class="fas fa-lock"></i>
+                <div class="content">
+                  <h3>Secure Payment</h3>
+                  <p>100% secure payment</p>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-redo-alt"></i>
-            <div class="content">
-                <h3>easy returns</h3>
-                <p>10 days returns</p>
+            <div class="col-md-3">
+              <div class="icons">
+                <i class="fas fa-redo-alt"></i>
+                <div class="content">
+                  <h3>Easy Returns</h3>
+                  <p>10 days returns</p>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-
-        <div class="icons">
-            <i class="fas fa-headset"></i>
-            <div class="content">
-                <h3>24/7 support</h3>
-                <p>call us any time</p>
+            <div class="col-md-3">
+              <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="content">
+                  <h3>24/7 Support</h3>
+                  <p>Call us any time</p>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
-
-    </section>
+      </section>
+      
     <!-- icon container end -->
 
-    <!-- Star Category -->
+    <!-- Start Category -->
     <div class="categories">
-        <div class="small-container">
+        <div class="small-container container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 col-md-4">
                     <img src="./images/category-1.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-4">
                     <img src="./images/category-2.jpg" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-4">
                     <img src="./images/category-3.jpg" alt="">
                 </div>
             </div>
@@ -377,9 +403,9 @@
     <!-- End Footer -->
 
     <!-- Loader -->
-    <div class="loader-container">
+    <!-- <div class="loader-container">
         <img src="/images/Loader.gif" alt="">
-    </div>
+    </div> -->
     <!-- loader end -->
 
     <!-- Start Modal -->
@@ -617,6 +643,9 @@
     </div>
     <div id="overlay"></div>
     <!-- End Modal -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 <!-- JavaScript -->
 <script src="./JS/main.js"></script>

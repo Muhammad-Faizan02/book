@@ -1,130 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Book Paradise Website - About Us</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-1">
-            <a href="index.html" class="logo"><i class="fas fa-book"></i>BookParadise</a>
-            <form class="search-form">
-                <input type="search" placeholder="Search here..." id="search-box">
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
-            <div class="icons">
-                <div id="search-btn" class="fas fa-search"></div>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <div id="login-btn" class="fas fa-user"></div>
-            </div>
+      <div class="header-1">
+        <a href="index.html" class="logo"
+          ><i class="fas fa-book"></i>BookParadise</a
+        >
+        <form class="search-form">
+          <input type="search" placeholder="Search here..." id="search-box" />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
         </div>
-    
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="product.html">Products</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="#blog">Blogs</a>
-            </nav>
-        </div>
-        </div>
-    
-    
+      </div>
+
+      <div class="bg-success custom-nav">
+        <nav class="navbar navbar-expand-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- End Navbar -->
 
-        <!-- Start Login  -->
-        <div class="login-form-container">
-        
-            <div id="close-login-btn" class="fas fa-times"></div>
-            <form action="">
-                <h3>Sign in</h3>
-                <span>username</span>
-                <input type="email" name="" class="box" placeholder="Enter your email">
-                <span>password</span>
-                <input type="password" name="" class="box" placeholder="Enter your password">
-                <div class="checkbox">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">remember me</label>
-                </div>
-                <input type="submit" value="sign in " class="btn">
-                <p>forget password ?<a href="">click here</a></p>
-                <p>dont have an account ?<a href="">create one</a></p>
-            </form>
+    <!-- Start Login  -->
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="">
+        <h3>Sign in</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="Enter your email"
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="Enter your password"
+        />
+        <div class="checkbox">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">remember me</label>
         </div>
-        <!-- End Login -->
+        <input type="submit" value="sign in " class="btn" />
+        <p>forget password ?<a href="">click here</a></p>
+        <p>dont have an account ?<a href="">create one</a></p>
+      </form>
+    </div>
+    <!-- End Login -->
 
     <!-- Start About Us content -->
 
     <div class="single-product">
-        <div class="small-container">
-            <div class="row">
-                <h2 class="title">About BookParadise</h2>
-                <p>Book Paradise is a dream come true for technology enthusiasts and book lovers alike. This incredible
-                    store boasts a vast
-                    and impressive collection of books, all dedicated to the ever-evolving world of information
-                    technology. From programming
-                    languages to networking, cybersecurity, and artificial intelligence, Book Paradise offers an
-                    unparalleled selection of
-                    titles to choose from. Whether you're an experienced professional looking to expand your knowledge
-                    or a curious beginner
-                    eager to learn, this store has something for everyone. With a team of knowledgeable staff on hand to
-                    assist with any
-                    queries and recommendations, Book Paradise is the ultimate destination for any tech-savvy reader
-                    looking to expand their
-                    horizons.</p>
-            </div>
+      <div class="small-container">
+        <div class="row">
+          <h2 class="title">About BookParadise</h2>
+          <p>
+            Book Paradise is a dream come true for technology enthusiasts and
+            book lovers alike. This incredible store boasts a vast and
+            impressive collection of books, all dedicated to the ever-evolving
+            world of information technology. From programming languages to
+            networking, cybersecurity, and artificial intelligence, Book
+            Paradise offers an unparalleled selection of titles to choose from.
+            Whether you're an experienced professional looking to expand your
+            knowledge or a curious beginner eager to learn, this store has
+            something for everyone. With a team of knowledgeable staff on hand
+            to assist with any queries and recommendations, Book Paradise is the
+            ultimate destination for any tech-savvy reader looking to expand
+            their horizons.
+          </p>
         </div>
+      </div>
     </div>
     <!-- End About Us Content -->
 
     <!-- Start Footer -->
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <a href="index.html" class="logo-white"><i class="fas fa-book"></i>BookParadise</a>
-                </div>
-                <div class="footer-col-2">
-                    <a href="index.html" class="logo-white">BookParadise</a>
-                    <p>Your One Stop Shop for all your book needs</p>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2023- BookParadise.Made by Muhammad Faizan</p>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <a href="index.html" class="logo-white"
+              ><i class="fas fa-book"></i>BookParadise</a
+            >
+          </div>
+          <div class="footer-col-2">
+            <a href="index.html" class="logo-white">BookParadise</a>
+            <p>Your One Stop Shop for all your book needs</p>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">
+          Copyright 2023- BookParadise.Made by Muhammad Faizan
+        </p>
+      </div>
     </div>
     <!-- End Footer -->
-
-
-
-
-</body>
-<!-- JavaScript -->
-<script src="./JS/main.js"></script>
-
+  </body>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./JS/main.js"></script>
 </html>
