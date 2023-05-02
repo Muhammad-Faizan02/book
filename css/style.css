@@ -626,11 +626,23 @@ h4 {
 .col-4:hover {
   transform: translateY(-5px);
 }
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+}
+.inner img:hover{
+  transform: scale(1.2);
+}
+.custom-hover :hover{
+color: #27ae60;
+}
 /* End Featured css*/
 
 /* Modal css*/
 
-.close-modal {
+/* .close-modal {
   background: none;
   color: black;
   border: none;
@@ -658,7 +670,7 @@ h4 {
 }
 .modal .body {
   padding: 0.75rem;
-}
+} */
 
 /* End Modal CSS */
 
